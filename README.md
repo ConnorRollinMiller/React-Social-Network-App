@@ -24,11 +24,9 @@ Other Technologies:
 ## TODOS
 
 -  Add FontAwesome instead of CDN in index.html
--  Fix style of application
+-  Improve style of application
 -  Make application responsive
 -  Improve app performance (Add shouldComponentUpdate in hook components)
--  Code split components
--  Create page not found
 
 ## Other Details
 

@@ -7,10 +7,12 @@ import NavBar from './components/layout/NavBar';
 import Layout from './components/layout/Layout';
 import Routes from './components/routing/Routes';
 import Spinner from './components/layout/Spinner';
+import Modal from './components/modal/Modal';
 
 import store from './store';
 import setAuthToken from './utils/setAuthToken';
 import { loadUser } from './actions/auth';
+import PostModalForm from './components/modal/PostModalForm';
 
 const Landing = lazy(() => import('./components/layout/Landing'));
 
@@ -45,6 +47,9 @@ const App = () => {
                      position={toast.POSITION.BOTTOM_CENTER}
                      transition={Zoom}
                   />
+                  <Modal>
+                     <PostModalForm />
+                  </Modal>
                </div>
             </Suspense>
          </Router>

@@ -1,4 +1,4 @@
-import { SET_ALERT, REMOVE_ALERT } from './types';
+import { SET_ALERT, REMOVE_ALERT, TOGGLE_MODAL } from './types';
 import { toast } from 'react-toastify';
 
 export const setAlert = (msg, alertType) => dispatch => {
@@ -12,4 +12,11 @@ export const setAlert = (msg, alertType) => dispatch => {
    } else {
       toast.success(msg, options);
    }
+};
+
+export const toggleModal = isHidden => dispatch => {
+   dispatch({
+      type: TOGGLE_MODAL,
+      payload: !isHidden
+   });
 };
