@@ -6,14 +6,14 @@ This app is a social network website for software developers.
 
 ## Technologies
 
-MERN Stack:
+**MERN Stack:**
 
 -  MongoDB
 -  Express.js
 -  React.js
 -  Node.js
 
-Other Technologies:
+**Other Technologies:**
 
 -  Bcrypt (hash passwords)
 -  Bootstrap (styling app)
@@ -27,6 +27,7 @@ Other Technologies:
 -  Improve style of application
 -  Make application responsive
 -  Improve app performance (Add shouldComponentUpdate in hook components)
+-  Spinner should be center of broswer window when loading
 
 ## Other Details
 

@@ -17,7 +17,7 @@ const ProfileItem = ({
             <div className='col-4 p-0'>
                <img src={avatar} alt='avatar' className='card-img' />
             </div>
-            <div className='col-4 card-header text-center d-flex flex-column justify-content-center'>
+            <div className='col-4 card-header border-0 text-center d-flex flex-column justify-content-center'>
                <h2 className='card-title text-capitalize'>{name}</h2>
                <p className='mb-2'>
                   <span className='text-capitalize'>{status}</span>{' '}

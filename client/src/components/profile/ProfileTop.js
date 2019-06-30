@@ -12,7 +12,7 @@ const ProfileTop = ({
    }
 }) => {
    return (
-      <div className='jumbotron jumbotron-fluid border text-center my-4 py-4'>
+      <div className='jumbotron jumbotron-fluid bg-dark text-white border text-center my-4 py-4'>
          <img className='rounded-circle mb-4' src={avatar} alt='' />
          <h1 className=''>{name}</h1>
          <p className='lead'>
@@ -21,12 +21,18 @@ const ProfileTop = ({
          <p>{location && <span>{location}</span>}</p>
          <div className='d-flex justify-content-center align-items-center'>
             {website && (
-               <a href={website} target='_blank' rel='noopener noreferrer'>
+               <a
+                  className='text-white'
+                  href={website}
+                  target='_blank'
+                  rel='noopener noreferrer'
+               >
                   <i className='fas fa-globe fa-2x' />
                </a>
             )}
             {social && social.twitter && (
                <a
+                  className='text-white'
                   href={social.twitter}
                   target='_blank'
                   rel='noopener noreferrer'
@@ -36,6 +42,7 @@ const ProfileTop = ({
             )}
             {social && social.facebook && (
                <a
+                  className='text-white'
                   href={social.facebook}
                   target='_blank'
                   rel='noopener noreferrer'
@@ -45,6 +52,7 @@ const ProfileTop = ({
             )}
             {social && social.linkedin && (
                <a
+                  className='text-white'
                   href={social.linkedin}
                   target='_blank'
                   rel='noopener noreferrer'
@@ -54,6 +62,7 @@ const ProfileTop = ({
             )}
             {social && social.youtube && (
                <a
+                  className='text-white'
                   href={social.youtube}
                   target='_blank'
                   rel='noopener noreferrer'
@@ -63,6 +72,7 @@ const ProfileTop = ({
             )}
             {social && social.instagram && (
                <a
+                  className='text-white'
                   href={social.instagram}
                   target='_blank'
                   rel='noopener noreferrer'

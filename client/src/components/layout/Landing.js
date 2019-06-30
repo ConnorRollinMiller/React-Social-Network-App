@@ -16,11 +16,11 @@ const Landing = ({ isAuthenticated }) => {
                Create a developer portfolio, share posts, and get help from
                other developers!
             </p>
-            <div className='btn-group'>
-               <Link to='/register' className='btn btn-secondary'>
-                  Sign Up
+            <div className='mt-4'>
+               <Link to='/register' className='btn btn-lg btn-secondary mr-2'>
+                  Register
                </Link>
-               <Link to='/login' className='btn btn-light'>
+               <Link to='/login' className='btn btn-lg btn-primary'>
                   Login
                </Link>
             </div>

@@ -43,7 +43,7 @@ const Profile = ({
                   <ProfileTop profile={profile} />
                   <ProfileAbout profile={profile} />
                   <div className='d-flex pt-4'>
-                     <div className='col p-4 border'>
+                     <div className='col p-4 mr-4 border'>
                         <h2 className='mb-4'>Experience</h2>
                         {profile.experience.length > 0 ? (
                            <div className='mb-4'>
@@ -79,10 +79,7 @@ const Profile = ({
                      </div>
                   </div>
                   {profile.githubUsername && (
-                     <div className='py-4'>
-                        <hr />
-                        <ProfileGithub username={profile.githubUsername} />
-                     </div>
+                     <ProfileGithub username={profile.githubUsername} />
                   )}
                </div>
             </React.Fragment>
