@@ -21,9 +21,7 @@ const Dashboard = ({
    }, [getCurrentProfile]);
 
    return loading && profile === null ? (
-      <div className='min-vh-100 d-flex justify-content-center align-items-center'>
-         <Spinner />
-      </div>
+      <Spinner />
    ) : (
       <React.Fragment>
          <h1>Dashboard</h1>

@@ -24,9 +24,7 @@ const Profile = ({
    return (
       <React.Fragment>
          {profile === null || loading ? (
-            <div className='min-vh-100 d-flex justify-content-center align-items-center'>
-               <Spinner />
-            </div>
+            <Spinner />
          ) : (
             <React.Fragment>
                <Link className='btn btn-link' to='/profiles'>

@@ -17,11 +17,11 @@ const PostModalForm = ({ addPost, toggleModal, alert: { isModalHidden } }) => {
    };
    return (
       <React.Fragment>
-         <div class='modal-header'>
-            <h5 class='modal-title'>Say Something...</h5>
+         <div className='modal-header'>
+            <h5 className='modal-title'>Say Something...</h5>
             <button
                type='button'
-               class='close'
+               className='close'
                onClick={e => toggleModal(isModalHidden)}
             >
                <span aria-hidden='true'>&times;</span>
