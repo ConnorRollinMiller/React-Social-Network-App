@@ -22,7 +22,7 @@ const NavBar = ({
                <i className='fas fa-plus' />
             </button>
          </li>
-         <li className='navbar-item mr-2'>
+         <li className='navbar-item'>
             <NavLink
                to='/profiles'
                activeClassName='text-white'
