@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import PrivateRoute from '../routing/PrivateRoute';
-import Login from '../auth/Login';
-import Register from '../auth/Register';
-import Dashboard from '../dashboard/Dashboard';
-import CreateProfile from '../profile-forms/CreateProfile';
-import EditProfile from '../profile-forms/EditProfile';
-import Profile from '../profile/Profile';
-import Posts from '../posts/Posts';
-import Post from '../post/Post';
-import PageNotFound from '../layout/PageNotFound';
-import AddExperience from '../profile-forms/AddExperience';
-import AddEducation from '../profile-forms/AddEducation';
-import Profiles from '../profiles/Profiles';
+const Login = lazy(() => import('../auth/Login'));
+const Register = lazy(() => import('../auth/Register'));
+const Dashboard = lazy(() => import('../dashboard/Dashboard'));
+const CreateProfile = lazy(() => import('../profile-forms/CreateProfile'));
+const EditProfile = lazy(() => import('../profile-forms/EditProfile'));
+const Profile = lazy(() => import('../profile/Profile'));
+const Posts = lazy(() => import('../posts/Posts'));
+const Post = lazy(() => import('../post/Post'));
+const PageNotFound = lazy(() => import('../layout/PageNotFound'));
+const AddExperience = lazy(() => import('../profile-forms/AddExperience'));
+const AddEducation = lazy(() => import('../profile-forms/AddEducation'));
+const Profiles = lazy(() => import('../profiles/Profiles'));
 
 const Routes = () => (
    <Switch>
