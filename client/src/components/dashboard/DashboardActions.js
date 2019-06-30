@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const DashboardActions = () => (
-   <div className='btn-group my-4'>
+   <div className='btn-group mb-4'>
       <Link to='/edit-profile' className='btn btn-link pl-0'>
          <i className='fas fa-user-circle mr-2' />
          Edit Profile

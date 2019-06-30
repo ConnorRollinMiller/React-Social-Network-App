@@ -21,7 +21,7 @@ const Experience = ({ deleteExperience, experience }) => (
             </thead>
             <tbody>
                {experience.map(exp => (
-                  <tr key={exp._id}>
+                  <tr key={exp._id} className='text-capitalize'>
                      <th scope='row'>{exp.company}</th>
                      <td>{exp.title}</td>
                      <td>
@@ -37,7 +37,7 @@ const Experience = ({ deleteExperience, experience }) => (
                            </Moment>
                         )}
                      </td>
-                     <td>
+                     <td className='text-right'>
                         <button
                            className='btn btn-danger'
                            onClick={() => deleteExperience(exp._id)}

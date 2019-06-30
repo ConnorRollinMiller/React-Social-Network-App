@@ -21,7 +21,7 @@ const Education = ({ deleteEducation, education }) => (
             </thead>
             <tbody>
                {education.map(edu => (
-                  <tr key={edu._id}>
+                  <tr key={edu._id} className='text-capitalize'>
                      <th scope='row'>{edu.school}</th>
                      <td>{edu.degree}</td>
                      <td>
@@ -37,7 +37,7 @@ const Education = ({ deleteEducation, education }) => (
                            </Moment>
                         )}
                      </td>
-                     <td>
+                     <td className='text-right'>
                         <button
                            className='btn btn-danger'
                            onClick={() => deleteEducation(edu._id)}

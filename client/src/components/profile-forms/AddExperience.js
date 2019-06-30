@@ -48,7 +48,9 @@ const AddExperience = ({ addExperience, history }) => {
                past
             </p>
          </div>
-         <small className='text-danger'>* = Required Field</small>
+         <small className='text-danger font-weight-bold'>
+            * = Required Field
+         </small>
          <div className='form-group'>
             <input
                className='form-control'

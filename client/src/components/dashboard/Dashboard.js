@@ -27,7 +27,7 @@ const Dashboard = ({
    ) : (
       <React.Fragment>
          <h1>Dashboard</h1>
-         <p className='lead text-capitalize mb-0'>
+         <p className='lead text-capitalize'>
             <i className='fas fa-user mr-2' />
             Welcome {user && user.name}
          </p>
@@ -43,7 +43,9 @@ const Dashboard = ({
             </React.Fragment>
          ) : (
             <React.Fragment>
-               <p>You have not set up a profile, please add some info.</p>
+               <p className='text-danger'>
+                  You have not set up a profile, please add some info.
+               </p>
                <Link to='/create-profile' className='btn btn-primary'>
                   Create Profile
                </Link>

@@ -46,7 +46,9 @@ const AddEducation = ({ addEducation, history }) => {
                Add any school or bootcamp thatyou have attended
             </p>
          </div>
-         <small className='text-danger'>* = Required Field</small>
+         <small className='text-danger font-weight-bold'>
+            * = Required Field
+         </small>
          <div className='form-group'>
             <input
                className='form-control'

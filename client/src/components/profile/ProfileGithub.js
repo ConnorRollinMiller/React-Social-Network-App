@@ -22,7 +22,7 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
                   className='d-flex align-items-center border p-4 mb-2'
                >
                   <div>
-                     <h4>
+                     <h4 className='mb-0'>
                         <a
                            href={repo.html_url}
                            target='_blank'
@@ -31,7 +31,9 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
                            {repo.name}
                         </a>
                      </h4>
-                     <p className='mb-0'>{repo.description}</p>
+                     {repo.description && (
+                        <p className='mb-0'>{repo.description}</p>
+                     )}
                   </div>
                   <ul className='ml-auto mb-0 d-flex flex-column align-items-stretch'>
                      <li className='col badge badge-primary mr-2 mb-2'>

@@ -82,7 +82,9 @@ const EditProfile = ({
                Let's get some information to make your profile stand out
             </p>
          </div>
-         <small className='text-danger'>* = Required Field</small>
+         <small className='text-danger font-weight-bold'>
+            * = Required Field
+         </small>
          <div className='form-group'>
             <select
                className='form-control'

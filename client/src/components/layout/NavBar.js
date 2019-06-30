@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { logout } from '../../actions/auth';
@@ -9,23 +9,32 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
    const authLinks = (
       <ul className='navbar-nav ml-auto'>
          <li className='navbar-item mr-2'>
-            <Link to='/profiles' className='nav-link d-flex align-items-center'>
+            <NavLink
+               to='/profiles'
+               activeClassName='text-white'
+               className='nav-link d-flex align-items-center'
+            >
                Developers
-            </Link>
+            </NavLink>
          </li>
          <li className='navbar-item mr-2'>
-            <Link to='/posts' className='nav-link d-flex align-items-center'>
+            <NavLink
+               to='/posts'
+               activeClassName='text-white'
+               className='nav-link d-flex align-items-center'
+            >
                Posts
-            </Link>
+            </NavLink>
          </li>
          <li className='navbar-item mr-2'>
-            <Link
+            <NavLink
                to='/dashboard'
+               activeClassName='text-white'
                className='nav-link d-flex align-items-center'
             >
                <i className='fas fa-user mr-2' />
                <span className='d-sm-none d-md-block'>Dashboard</span>
-            </Link>
+            </NavLink>
          </li>
          <li className='navbar-item'>
             <button
@@ -42,29 +51,41 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
    const guestLinks = (
       <ul className='navbar-nav ml-auto'>
          <li className='navbar-item'>
-            <Link to='/profiles' className='nav-link'>
+            <NavLink
+               to='/profiles'
+               activeClassName='text-white'
+               className='nav-link'
+            >
                Developers
-            </Link>
+            </NavLink>
          </li>
          <li className='navbar-item'>
-            <Link to='/register' className='nav-link'>
+            <NavLink
+               to='/register'
+               activeClassName='text-white'
+               className='nav-link'
+            >
                Register
-            </Link>
+            </NavLink>
          </li>
          <li className='navbar-item'>
-            <Link to='/login' className='nav-link'>
+            <NavLink
+               to='/login'
+               activeClassName='text-white'
+               className='nav-link'
+            >
                Login
-            </Link>
+            </NavLink>
          </li>
       </ul>
    );
 
    return (
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-white'>
-         <Link to='/' className='navbar-brand'>
+         <NavLink to='/' activeClassName='text-white' className='navbar-brand'>
             <i className='fas fa-code mr-2' />
             Developer Network
-         </Link>
+         </NavLink>
          {!loading && (
             <React.Fragment>
                {isAuthenticated ? authLinks : guestLinks}
